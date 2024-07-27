@@ -2,7 +2,7 @@
 using TechChallenge.Domain.Exceptions;
 using TechChallenge.SharedKernel.DomainObjects;
 
-namespace TechChallenge.Domain.Entities
+namespace TechChallenge.Domain.ValueObjects
 {
     public class Regiao : ValueObject
     {
