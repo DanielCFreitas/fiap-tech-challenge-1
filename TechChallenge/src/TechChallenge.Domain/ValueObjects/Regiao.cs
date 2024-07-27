@@ -12,6 +12,8 @@ namespace TechChallenge.Domain.ValueObjects
             DDD = ddd;
         }
 
+        protected Regiao() { }
+
         public Estado Estado { get; private set; }
         public int DDD { get; private set; }
 

@@ -14,6 +14,8 @@ namespace TechChallenge.Domain.ValueObjects
             Validar();
         }
 
+        protected Telefone() { }
+
         public string Numero { get; private set; }
 
         public override void Validar()

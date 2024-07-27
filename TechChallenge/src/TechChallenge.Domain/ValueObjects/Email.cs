@@ -14,6 +14,8 @@ namespace TechChallenge.Domain.ValueObjects
             Validar();
         }
 
+        protected Email() { }
+
         public string EnderecoDeEmail { get; private set; }
 
         public override void Validar()

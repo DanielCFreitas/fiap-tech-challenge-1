@@ -16,6 +16,8 @@ namespace TechChallenge.Domain.Entities
             ValidarEntidade();
         }
 
+        protected Contato() { }
+
         public string Nome { get; private set; }
         public Telefone Telefone { get; private set; }
         public Email Email { get; private set; }
