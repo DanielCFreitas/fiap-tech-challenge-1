@@ -2,6 +2,6 @@
 {
     public interface IUnitOfWork
     {
-        Task ConfirmarTransacao();
+        Task<bool> ConfirmarTransacao();
     }
 }
