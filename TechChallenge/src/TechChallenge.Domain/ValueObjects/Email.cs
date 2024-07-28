@@ -5,7 +5,7 @@ namespace TechChallenge.Domain.ValueObjects
 {
     public class Email : ValueObject
     {
-        private const string RegexFormatoDoEmail = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$";
+        public const string RegexFormatoDoEmail = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$";
 
         public Email(string enderecoDeEmail)
         {

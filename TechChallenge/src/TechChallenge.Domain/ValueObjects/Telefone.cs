@@ -5,7 +5,7 @@ namespace TechChallenge.Domain.ValueObjects
 {
     public class Telefone : ValueObject
     {
-        private const string RegexFormatoDoTelefone = "^[0-9]{4}-[0-9]{4}$";
+        public const string RegexFormatoDoTelefone = "^[0-9]{4}-[0-9]{4}$";
 
         public Telefone(string numero)
         {

@@ -17,7 +17,8 @@ namespace TechChallenge.Infrastructure.Data
 
         public async Task<bool> ConfirmarTransacao()
         {
-            return await base.SaveChangesAsync() > 1;
+            var alteracoes = await base.SaveChangesAsync();
+            return alteracoes != 0;
         }
     }
 }

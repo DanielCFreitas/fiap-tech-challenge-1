@@ -9,7 +9,7 @@
         protected Entity()
         {
             Id = Guid.NewGuid();
-            DataCadastro = DateTime.Now;
+            DataCadastro = DateTime.UtcNow;
         }
 
         public override bool Equals(object? obj)
