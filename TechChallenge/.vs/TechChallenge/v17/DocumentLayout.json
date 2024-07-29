@@ -3,12 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\danie\\Desktop\\fiap-tech-challenge-1\\TechChallenge\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{212E106B-5F26-4698-900B-0DC5F4ACCAAE}|src\\TechChallenge.Infrastructure\\TechChallenge.Infrastructure.csproj|c:\\users\\danie\\desktop\\fiap-tech-challenge-1\\techchallenge\\src\\techchallenge.infrastructure\\data\\repository\\contatorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{212E106B-5F26-4698-900B-0DC5F4ACCAAE}|src\\TechChallenge.Infrastructure\\TechChallenge.Infrastructure.csproj|solutionrelative:src\\techchallenge.infrastructure\\data\\repository\\contatorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36CD0087-2E16-4B45-AFCB-9A81D952D82B}|src\\TechChallenge.Api\\TechChallenge.Api.csproj|c:\\users\\danie\\desktop\\fiap-tech-challenge-1\\techchallenge\\src\\techchallenge.api\\controllers\\contatocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36CD0087-2E16-4B45-AFCB-9A81D952D82B}|src\\TechChallenge.Api\\TechChallenge.Api.csproj|solutionrelative:src\\techchallenge.api\\controllers\\contatocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{312B21B4-D26A-4CC7-8A62-DCF9A3ADFBDE}|src\\TechChallenge.Domain\\TechChallenge.Domain.csproj|c:\\users\\danie\\desktop\\fiap-tech-challenge-1\\techchallenge\\src\\techchallenge.domain\\valueobjects\\regiao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{312B21B4-D26A-4CC7-8A62-DCF9A3ADFBDE}|src\\TechChallenge.Domain\\TechChallenge.Domain.csproj|solutionrelative:src\\techchallenge.domain\\valueobjects\\regiao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{312B21B4-D26A-4CC7-8A62-DCF9A3ADFBDE}|src\\TechChallenge.Domain\\TechChallenge.Domain.csproj|c:\\users\\danie\\desktop\\fiap-tech-challenge-1\\techchallenge\\src\\techchallenge.domain\\entities\\contato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{312B21B4-D26A-4CC7-8A62-DCF9A3ADFBDE}|src\\TechChallenge.Domain\\TechChallenge.Domain.csproj|solutionrelative:src\\techchallenge.domain\\entities\\contato.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{36CD0087-2E16-4B45-AFCB-9A81D952D82B}|src\\TechChallenge.Api\\TechChallenge.Api.csproj|c:\\users\\danie\\desktop\\fiap-tech-challenge-1\\techchallenge\\src\\techchallenge.api\\services\\contatoservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{36CD0087-2E16-4B45-AFCB-9A81D952D82B}|src\\TechChallenge.Api\\TechChallenge.Api.csproj|solutionrelative:src\\techchallenge.api\\services\\contatoservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{212E106B-5F26-4698-900B-0DC5F4ACCAAE}|src\\TechChallenge.Infrastructure\\TechChallenge.Infrastructure.csproj|c:\\users\\danie\\desktop\\fiap-tech-challenge-1\\techchallenge\\src\\techchallenge.infrastructure\\data\\techchallengedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{212E106B-5F26-4698-900B-0DC5F4ACCAAE}|src\\TechChallenge.Infrastructure\\TechChallenge.Infrastructure.csproj|solutionrelative:src\\techchallenge.infrastructure\\data\\techchallengedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{36CD0087-2E16-4B45-AFCB-9A81D952D82B}|src\\TechChallenge.Api\\TechChallenge.Api.csproj|c:\\users\\danie\\desktop\\fiap-tech-challenge-1\\techchallenge\\src\\techchallenge.api\\dto\\response\\contatosfiltradosporregiaoresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36CD0087-2E16-4B45-AFCB-9A81D952D82B}|src\\TechChallenge.Api\\TechChallenge.Api.csproj|solutionrelative:src\\techchallenge.api\\dto\\response\\contatosfiltradosporregiaoresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,28 +42,80 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ContatoController.cs",
+              "DocumentMoniker": "C:\\Users\\danie\\Desktop\\fiap-tech-challenge-1\\TechChallenge\\src\\TechChallenge.Api\\Controllers\\ContatoController.cs",
+              "RelativeDocumentMoniker": "src\\TechChallenge.Api\\Controllers\\ContatoController.cs",
+              "ToolTip": "C:\\Users\\danie\\Desktop\\fiap-tech-challenge-1\\TechChallenge\\src\\TechChallenge.Api\\Controllers\\ContatoController.cs",
+              "RelativeToolTip": "src\\TechChallenge.Api\\Controllers\\ContatoController.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAowDoAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T22:18:01.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ContatoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\danie\\Desktop\\fiap-tech-challenge-1\\TechChallenge\\src\\TechChallenge.Infrastructure\\Data\\Repository\\ContatoRepository.cs",
+              "RelativeDocumentMoniker": "src\\TechChallenge.Infrastructure\\Data\\Repository\\ContatoRepository.cs",
+              "ToolTip": "C:\\Users\\danie\\Desktop\\fiap-tech-challenge-1\\TechChallenge\\src\\TechChallenge.Infrastructure\\Data\\Repository\\ContatoRepository.cs",
+              "RelativeToolTip": "src\\TechChallenge.Infrastructure\\Data\\Repository\\ContatoRepository.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAswC0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T22:17:46.484Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Contato.cs",
+              "DocumentMoniker": "C:\\Users\\danie\\Desktop\\fiap-tech-challenge-1\\TechChallenge\\src\\TechChallenge.Domain\\Entities\\Contato.cs",
+              "RelativeDocumentMoniker": "src\\TechChallenge.Domain\\Entities\\Contato.cs",
+              "ToolTip": "C:\\Users\\danie\\Desktop\\fiap-tech-challenge-1\\TechChallenge\\src\\TechChallenge.Domain\\Entities\\Contato.cs",
+              "RelativeToolTip": "src\\TechChallenge.Domain\\Entities\\Contato.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T22:15:14.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Regiao.cs",
+              "DocumentMoniker": "C:\\Users\\danie\\Desktop\\fiap-tech-challenge-1\\TechChallenge\\src\\TechChallenge.Domain\\ValueObjects\\Regiao.cs",
+              "RelativeDocumentMoniker": "src\\TechChallenge.Domain\\ValueObjects\\Regiao.cs",
+              "ToolTip": "C:\\Users\\danie\\Desktop\\fiap-tech-challenge-1\\TechChallenge\\src\\TechChallenge.Domain\\ValueObjects\\Regiao.cs",
+              "RelativeToolTip": "src\\TechChallenge.Domain\\ValueObjects\\Regiao.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T22:14:34.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ContatosFiltradosPorRegiaoResponse.cs",
+              "DocumentMoniker": "C:\\Users\\danie\\Desktop\\fiap-tech-challenge-1\\TechChallenge\\src\\TechChallenge.Api\\DTO\\Response\\ContatosFiltradosPorRegiaoResponse.cs",
+              "RelativeDocumentMoniker": "src\\TechChallenge.Api\\DTO\\Response\\ContatosFiltradosPorRegiaoResponse.cs",
+              "ToolTip": "C:\\Users\\danie\\Desktop\\fiap-tech-challenge-1\\TechChallenge\\src\\TechChallenge.Api\\DTO\\Response\\ContatosFiltradosPorRegiaoResponse.cs",
+              "RelativeToolTip": "src\\TechChallenge.Api\\DTO\\Response\\ContatosFiltradosPorRegiaoResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T22:02:47.884Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "ContatoServices.cs",
               "DocumentMoniker": "C:\\Users\\danie\\Desktop\\fiap-tech-challenge-1\\TechChallenge\\src\\TechChallenge.Api\\Services\\ContatoServices.cs",
               "RelativeDocumentMoniker": "src\\TechChallenge.Api\\Services\\ContatoServices.cs",
               "ToolTip": "C:\\Users\\danie\\Desktop\\fiap-tech-challenge-1\\TechChallenge\\src\\TechChallenge.Api\\Services\\ContatoServices.cs",
               "RelativeToolTip": "src\\TechChallenge.Api\\Services\\ContatoServices.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAAwCUAAAAsAAAA",
+              "ViewState": "AQIAACQAAAAAAAAAAAAUwD8AAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-28T18:43:32.153Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TechChallengeDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\danie\\Desktop\\fiap-tech-challenge-1\\TechChallenge\\src\\TechChallenge.Infrastructure\\Data\\TechChallengeDbContext.cs",
-              "RelativeDocumentMoniker": "src\\TechChallenge.Infrastructure\\Data\\TechChallengeDbContext.cs",
-              "ToolTip": "C:\\Users\\danie\\Desktop\\fiap-tech-challenge-1\\TechChallenge\\src\\TechChallenge.Infrastructure\\Data\\TechChallengeDbContext.cs",
-              "RelativeToolTip": "src\\TechChallenge.Infrastructure\\Data\\TechChallengeDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-28T18:44:15.511Z",
+              "WhenOpened": "2024-07-29T21:56:21.804Z",
               "EditorCaption": ""
             }
           ]

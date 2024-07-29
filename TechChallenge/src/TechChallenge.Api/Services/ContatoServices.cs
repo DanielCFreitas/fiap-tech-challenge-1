@@ -1,5 +1,6 @@
 ﻿using FluentValidation.Results;
 using TechChallenge.Api.DTO.Request;
+using TechChallenge.Api.DTO.Response;
 using TechChallenge.Api.Services.Interfaces;
 using TechChallenge.Domain.Entities;
 using TechChallenge.Domain.Enum;
@@ -36,6 +37,33 @@ namespace TechChallenge.Api.Services
                 return new ValidationResult(new List<ValidationFailure>() { new ValidationFailure("Banco de Dados", "Não conseguiu persistir o contato no banco de dados") });
 
             return request.ValidationResult!;
+        }
+
+
+        public async Task<ContatosFiltradosPorRegiaoResponse> BuscarPorRegiao(string estado, int ddd)
+        {
+            var response = new ContatosFiltradosPorRegiaoResponse();
+
+            var estadoEstaValido = Enum.TryParse<Estado>(estado, true, out var estadoEnum);
+            if (!estadoEstaValido)
+            {
+                var validationFailure = new ValidationFailure("Estado", "Estado está inválido");
+                response.ValidationResult.Errors.Add(validationFailure);
+                return response;
+            }
+
+            var dddEstaValido = estadoEnum.DDDEstaValido(ddd);
+            if (!dddEstaValido)
+            {
+                var validationFailure = new ValidationFailure("DDD", $"DDD está inválido para o estado {estado}");
+                response.ValidationResult.Errors.Add(validationFailure);
+                return response;
+            }
+
+            var regiao = new Regiao(estadoEnum, ddd);
+            var contatos = await _contatoRepository.BuscarPorRegiao(regiao);
+            response.Contatos = contatos;
+            return response;
         }
     }
 }
