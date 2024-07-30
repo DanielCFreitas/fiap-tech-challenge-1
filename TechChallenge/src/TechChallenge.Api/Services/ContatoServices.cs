@@ -39,6 +39,23 @@ namespace TechChallenge.Api.Services
             return request.ValidationResult!;
         }
 
+        public async Task<IEnumerable<ContatoResponse>> BuscarPorDDD(int ddd)
+        {
+            var contatos = await _contatoRepository.BuscarPorDDD(ddd);
+
+            var contatosResponse = MapearParaContatoResponse(contatos);
+
+            return contatosResponse;
+        }
+
+        public async Task<IEnumerable<ContatoResponse>> BuscarPorEstado(Estado estado)
+        {
+            var contatos = await _contatoRepository.BuscarPorEstado(estado);
+
+            var contatosResponse = MapearParaContatoResponse(contatos);
+
+            return contatosResponse;
+        }
 
         public async Task<ContatosFiltradosPorRegiaoResponse> BuscarPorRegiao(string estado, int ddd)
         {

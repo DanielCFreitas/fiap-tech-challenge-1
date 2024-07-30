@@ -2,7 +2,6 @@
 using TechChallenge.Api.DTO.Request;
 using TechChallenge.Api.Services.Interfaces;
 using TechChallenge.Domain.Enum;
-using TechChallenge.Domain.Repository;
 
 namespace TechChallenge.Api.Controllers
 {
@@ -11,12 +10,10 @@ namespace TechChallenge.Api.Controllers
     public class ContatoController : ControllerBase
     {
         private readonly IContatoServices _contatoServices;
-        private readonly IContatoRepository _contatoRepository;
 
-        public ContatoController(IContatoServices contatoServices, IContatoRepository contatoRepository)
+        public ContatoController(IContatoServices contatoServices)
         {
             _contatoServices = contatoServices;
-            _contatoRepository = contatoRepository;
         }
 
         [HttpPost]
@@ -36,7 +33,7 @@ namespace TechChallenge.Api.Controllers
         [HttpGet("{ddd:int}")]
         public async Task<IActionResult> BuscarPorDDD(int ddd)
         {
-            var contatos = await _contatoRepository.BuscarPorDDD(ddd);
+            var contatos = await _contatoServices.BuscarPorDDD(ddd);
 
             return Ok(contatos);
         }
@@ -48,7 +45,7 @@ namespace TechChallenge.Api.Controllers
 
             if (!converteuEstado) return BadRequest("Estado inválido");
 
-            var contatos = await _contatoRepository.BuscarPorEstado(estadoEnum);
+            var contatos = await _contatoServices.BuscarPorEstado(estadoEnum);
 
             return Ok(contatos);
         }
