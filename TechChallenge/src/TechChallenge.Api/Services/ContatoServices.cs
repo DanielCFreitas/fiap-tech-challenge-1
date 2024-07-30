@@ -62,8 +62,24 @@ namespace TechChallenge.Api.Services
 
             var regiao = new Regiao(estadoEnum, ddd);
             var contatos = await _contatoRepository.BuscarPorRegiao(regiao);
-            response.Contatos = contatos;
+            response.Contatos = MapearParaContatoResponse(contatos);
             return response;
+        }
+
+        /// <summary>
+        /// Mapeia o contato para ContatoResponse
+        /// </summary>
+        /// <param name="contatos">Contatos conforme vem do banco de dados</param>
+        /// <returns></returns>
+        private IEnumerable<ContatoResponse> MapearParaContatoResponse(IEnumerable<Contato> contatos)
+        {
+            return contatos.Select(contato => new ContatoResponse()
+            {
+                Nome = contato.Nome,
+                Email = contato.Email.EnderecoDeEmail,
+                Estado = contato.Regiao.Estado.ToString(),
+                Telefone = contato.TelefoneFormatado()
+            });
         }
     }
 }

@@ -1,11 +1,18 @@
 ﻿using FluentValidation.Results;
-using TechChallenge.Domain.Entities;
 
 namespace TechChallenge.Api.DTO.Response
 {
-    public class ContatosFiltradosPorRegiaoResponse
+    public record ContatosFiltradosPorRegiaoResponse
     {
         public ValidationResult ValidationResult { get; set; } = new ValidationResult();
-        public IEnumerable<Contato> Contatos { get; set; } = new List<Contato>();
+        public IEnumerable<ContatoResponse> Contatos { get; set; } = new List<ContatoResponse>();
+    }
+
+    public record ContatoResponse
+    {
+        public string Nome { get; set; }
+        public string Telefone { get; set; }
+        public string Email { get; set; }
+        public string Estado { get; set; }
     }
 }

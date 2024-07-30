@@ -23,6 +23,8 @@ namespace TechChallenge.Domain.Entities
         public Email Email { get; private set; }
         public Regiao Regiao { get; private set; }
 
+        public string TelefoneFormatado() => $"({Regiao.DDD}) {Telefone.Numero}";
+
         public override void ValidarEntidade()
         {
             Validacoes.ExcecaoSeVazioOuNulo(Nome, "O nome precisa ser informado");
