@@ -13,6 +13,32 @@ namespace TechChallenge.Api.Services
     {
         private readonly IContatoRepository _contatoRepository;
 
+        public async Task<ValidationResult> AtualizarContato(Guid contatoId, AtualizarContatoRequest request)
+        {
+            if (!request.RequisicaoEstaValida())
+                return request.ValidationResult!;
+
+            var contato = await _contatoRepository.BuscarPorId(contatoId);
+
+            if (contato is null)
+                return new ValidationResult(new List<ValidationFailure>() { new ValidationFailure("Contato", "Não existe contato com este id passado por parametro") });
+
+            var estado = Enum.Parse<Estado>(request.Estado, true);
+
+            var telefone = new Telefone(request.Telefone);
+            var email = new Email(request.Email);
+            var regiao = new Regiao(estado, request.DDD);
+            contato.AtualizarContato(request.Nome, telefone, email, regiao);
+
+            _contatoRepository.Atualizar(contato);
+            var atualizadoComSucesso = await _contatoRepository.UnitOfWork.ConfirmarTransacao();
+
+            if (!atualizadoComSucesso)
+                return new ValidationResult(new List<ValidationFailure>() { new ValidationFailure("Banco de Dados", "Não conseguiu persistir o contato no banco de dados") });
+
+            return request.ValidationResult!;
+        }
+
         public ContatoServices(IContatoRepository contatoRepository)
         {
             _contatoRepository = contatoRepository;
@@ -23,7 +49,7 @@ namespace TechChallenge.Api.Services
             if (!request.RequisicaoEstaValida())
                 return request.ValidationResult!;
 
-            var estado = Enum.Parse<Estado>(request.Estado);
+            var estado = Enum.Parse<Estado>(request.Estado, true);
 
             var telefone = new Telefone(request.Telefone);
             var email = new Email(request.Email);
@@ -81,6 +107,24 @@ namespace TechChallenge.Api.Services
             var contatos = await _contatoRepository.BuscarPorRegiao(regiao);
             response.Contatos = MapearParaContatoResponse(contatos);
             return response;
+        }
+
+        public async Task<ValidationResult> ExcluirContato(Guid contatoId)
+        {
+
+            var contato = await _contatoRepository.BuscarPorId(contatoId);
+
+            if (contato is null)
+                return new ValidationResult(new List<ValidationFailure>() { new ValidationFailure("Contato", "Não existe contato com este id passado por parametro") });
+
+            _contatoRepository.Excluir(contato);
+            var excluiuComSucesso = await _contatoRepository.UnitOfWork.ConfirmarTransacao();
+
+            if (!excluiuComSucesso)
+                return new ValidationResult(new List<ValidationFailure>() { new ValidationFailure("Banco de Dados", "Não conseguiu excluir o contato no banco de dados") });
+
+            return new ValidationResult();
+
         }
 
         /// <summary>

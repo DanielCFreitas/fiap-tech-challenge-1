@@ -12,6 +12,9 @@
             DataCadastro = DateTime.UtcNow;
         }
 
+        protected void AtualizarDataDeAtualizacao() => DataAtualizacao = DateTime.UtcNow;
+
+
         public override bool Equals(object? obj)
         {
             var compareTo = obj as Entity;

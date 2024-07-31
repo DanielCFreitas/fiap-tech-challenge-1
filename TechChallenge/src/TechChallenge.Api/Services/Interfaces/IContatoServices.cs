@@ -8,6 +8,14 @@ namespace TechChallenge.Api.Services.Interfaces
     public interface IContatoServices
     {
         /// <summary>
+        /// Faz a atualização de um contato
+        /// </summary>
+        /// <param name="contatoId">Id do contato</param>
+        /// <param name="request">Dados atualizados</param>
+        /// <returns></returns>
+        Task<ValidationResult> AtualizarContato(Guid contatoId, AtualizarContatoRequest request);
+
+        /// <summary>
         /// Faz o cadastro de um novo contato 
         /// </summary>
         /// <param name="request">Requisicao enviada para realizar o cadastro de contato</param>
@@ -35,5 +43,12 @@ namespace TechChallenge.Api.Services.Interfaces
         /// <param name="ddd">ddd do contato</param>
         /// <returns></returns>
         Task<ContatosFiltradosPorRegiaoResponse> BuscarPorRegiao(string estado, int ddd);
+
+        /// <summary>
+        /// Exclui um contato do banco de dados
+        /// </summary>
+        /// <param name="contatoId">Id do contato para ser excluido</param>
+        /// <returns></returns>
+        Task<ValidationResult> ExcluirContato(Guid contatoId);
     }
 }

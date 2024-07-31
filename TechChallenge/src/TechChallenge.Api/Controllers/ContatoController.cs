@@ -30,6 +30,20 @@ namespace TechChallenge.Api.Controllers
             return Ok();
         }
 
+        [HttpPut("{contatoId}")]
+        public async Task<IActionResult> Put(Guid contatoId, [FromBody] AtualizarContatoRequest request)
+        {
+            var resultado = await _contatoServices.AtualizarContato(contatoId, request);
+
+            if (!resultado.IsValid)
+            {
+                var errosEncontrados = resultado.Errors.Select(erro => erro.ErrorMessage);
+                return BadRequest(errosEncontrados);
+            }
+
+            return Ok();
+        }
+
         [HttpGet("{ddd:int}")]
         public async Task<IActionResult> BuscarPorDDD(int ddd)
         {
@@ -62,6 +76,20 @@ namespace TechChallenge.Api.Controllers
             }
 
             return Ok(response.Contatos);
+        }
+
+        [HttpDelete("{contatoId}")]
+        public async Task<IActionResult> Delete(Guid contatoId)
+        {
+            var resultado = await _contatoServices.ExcluirContato(contatoId);
+
+            if (!resultado.IsValid)
+            {
+                var errosEncontrados = resultado.Errors.Select(erro => erro.ErrorMessage);
+                return BadRequest(errosEncontrados);
+            }
+
+            return Ok();
         }
     }
 }
