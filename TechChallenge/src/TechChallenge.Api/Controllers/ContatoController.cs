@@ -6,8 +6,7 @@ using TechChallenge.Domain.Enum;
 namespace TechChallenge.Api.Controllers
 {
     [Route("api/[controller]")]
-    [ApiController]
-    public class ContatoController : ControllerBase
+    public class ContatoController : GenericController
     {
         private readonly IContatoServices _contatoServices;
 
@@ -21,13 +20,9 @@ namespace TechChallenge.Api.Controllers
         {
             var resultado = await _contatoServices.CadastrarContato(request);
 
-            if (!resultado.IsValid)
-            {
-                var errosEncontrados = resultado.Errors.Select(erro => erro.ErrorMessage);
-                return BadRequest(errosEncontrados);
-            }
+            if (!resultado.IsValid) AdicionarErro(resultado);
 
-            return Ok();
+            return BaseResponse();
         }
 
         [HttpPut("{contatoId}")]
@@ -35,13 +30,9 @@ namespace TechChallenge.Api.Controllers
         {
             var resultado = await _contatoServices.AtualizarContato(contatoId, request);
 
-            if (!resultado.IsValid)
-            {
-                var errosEncontrados = resultado.Errors.Select(erro => erro.ErrorMessage);
-                return BadRequest(errosEncontrados);
-            }
+            if (!resultado.IsValid) AdicionarErro(resultado);
 
-            return Ok();
+            return BaseResponse();
         }
 
         [HttpGet("{ddd:int}")]
@@ -49,7 +40,7 @@ namespace TechChallenge.Api.Controllers
         {
             var contatos = await _contatoServices.BuscarPorDDD(ddd);
 
-            return Ok(contatos);
+            return BaseResponse(contatos);
         }
 
         [HttpGet("{estado}")]
@@ -57,11 +48,15 @@ namespace TechChallenge.Api.Controllers
         {
             var converteuEstado = Enum.TryParse<Estado>(estado, true, out var estadoEnum);
 
-            if (!converteuEstado) return BadRequest("Estado inválido");
+            if (!converteuEstado)
+            {
+                AdicionarErro("Estado inválido");
+                return BaseResponse();
+            }
 
             var contatos = await _contatoServices.BuscarPorEstado(estadoEnum);
 
-            return Ok(contatos);
+            return BaseResponse(contatos);
         }
 
         [HttpGet("{estado}/{ddd:int}")]
@@ -69,13 +64,9 @@ namespace TechChallenge.Api.Controllers
         {
             var response = await _contatoServices.BuscarPorRegiao(estado, ddd);
 
-            if (!response.ValidationResult.IsValid)
-            {
-                var errosEncontrados = response.ValidationResult.Errors.Select(erro => erro.ErrorMessage);
-                return BadRequest(errosEncontrados);
-            }
+            if (!response.ValidationResult.IsValid) AdicionarErro(response.ValidationResult);
 
-            return Ok(response.Contatos);
+            return BaseResponse(response.Contatos);
         }
 
         [HttpDelete("{contatoId}")]
@@ -83,13 +74,9 @@ namespace TechChallenge.Api.Controllers
         {
             var resultado = await _contatoServices.ExcluirContato(contatoId);
 
-            if (!resultado.IsValid)
-            {
-                var errosEncontrados = resultado.Errors.Select(erro => erro.ErrorMessage);
-                return BadRequest(errosEncontrados);
-            }
+            if (!resultado.IsValid) AdicionarErro(resultado);
 
-            return Ok();
+            return BaseResponse();
         }
     }
 }
