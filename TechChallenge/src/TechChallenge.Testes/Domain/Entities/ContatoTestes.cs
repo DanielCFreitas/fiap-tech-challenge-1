@@ -3,7 +3,7 @@ using TechChallenge.Domain.Enum;
 using TechChallenge.Domain.ValueObjects;
 using TechChallenge.SharedKernel.Validations;
 
-namespace TechChallenge.Testes.Domain
+namespace TechChallenge.Testes.Domain.Entities
 {
     public class ContatoTestes
     {
