@@ -106,5 +106,31 @@ namespace TechChallenge.Testes.Api.Services
             Assert.Empty(validationResult.Errors);
             Assert.True(validationResult.IsValid);
         }
+
+        [Fact]
+        [Trait("ContatoServices", "Deve retornar que a requisicao nao esta valida")]
+        public async void ContatoServices_CadastrarContato_DeveRetornarErroDeValidacaoDaRequisicao()
+        {
+            // Arrange
+            var contatoRepository = new Mock<IContatoRepository>();
+
+            var request = new CadastrarContatoRequest()
+            {
+                Nome = string.Empty,
+                Telefone = "11111111",
+                Email = "daniel123",
+                Estado = "SP",
+                DDD = 31
+            };
+
+            var contatoServices = new ContatoServices(contatoRepository.Object);
+
+            // Act
+            var validationResult = await contatoServices.CadastrarContato(request);
+
+            // Assert
+            Assert.Equal(4, validationResult.Errors.Count);
+            Assert.False(validationResult.IsValid);
+        }
     }
 }
