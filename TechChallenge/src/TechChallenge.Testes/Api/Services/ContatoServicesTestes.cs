@@ -76,7 +76,7 @@ namespace TechChallenge.Testes.Api.Services
 
         [Fact]
         [Trait("ContatoServices", "Deve retornar que nao conseguiu persistir a atualização no banco de dados")]
-        public async void ContatoServices_AtualizarContato_DeveRetornarErroDePersistenciaNoBanco()
+        public async void ContatoServices_AtualizarContato_DeveRetornarErroDePersistenciaNoBancoParaAtualizacao()
         {
             // Arrange
             var contatoRepository = new Mock<IContatoRepository>();
@@ -163,6 +163,35 @@ namespace TechChallenge.Testes.Api.Services
 
             // Assert
             Assert.Equal(4, validationResult.Errors.Count);
+            Assert.False(validationResult.IsValid);
+        }
+
+        [Fact]
+        [Trait("ContatoServices", "Deve retornar que nao conseguiu persistir o cadastro de contato no banco de dados")]
+        public async void ContatoServices_CadastrarContato_DeveRetornarErroDePersistenciaNoBancoParaCadastro()
+        {
+            // Arrange
+            var contatoRepository = new Mock<IContatoRepository>();
+            contatoRepository
+                .Setup(repository => repository.UnitOfWork.ConfirmarTransacao())
+                .ReturnsAsync(false);
+
+            var request = new CadastrarContatoRequest()
+            {
+                Nome = "Daniel",
+                Telefone = "1111-1111",
+                Email = "daniel@email.com.br",
+                Estado = "SP",
+                DDD = 11
+            };
+
+            var contatoServices = new ContatoServices(contatoRepository.Object);
+
+            // Act
+            var validationResult = await contatoServices.CadastrarContato(request);
+
+            // Assert
+            Assert.Single(validationResult.Errors);
             Assert.False(validationResult.IsValid);
         }
     }
