@@ -75,6 +75,39 @@ namespace TechChallenge.Testes.Api.Services
         }
 
         [Fact]
+        [Trait("ContatoServices", "Deve retornar que nao conseguiu persistir a atualização no banco de dados")]
+        public async void ContatoServices_AtualizarContato_DeveRetornarErroDePersistenciaNoBanco()
+        {
+            // Arrange
+            var contatoRepository = new Mock<IContatoRepository>();
+            contatoRepository
+                .Setup(repository => repository.BuscarPorId(It.IsAny<Guid>()))
+                .ReturnsAsync(_contatoServicesTestesFixture.CriaContatoValido());
+
+            contatoRepository
+                .Setup(repository => repository.UnitOfWork.ConfirmarTransacao())
+                .ReturnsAsync(false);
+
+            var request = new AtualizarContatoRequest()
+            {
+                Nome = "Daniel",
+                Telefone = "1111-1111",
+                Email = "daniel@email.com.br",
+                Estado = "SP",
+                DDD = 11
+            };
+
+            var contatoServices = new ContatoServices(contatoRepository.Object);
+
+            // Act
+            var validationResult = await contatoServices.AtualizarContato(Guid.NewGuid(), request);
+
+            // Assert
+            Assert.Single(validationResult.Errors);
+            Assert.False(validationResult.IsValid);
+        }
+
+        [Fact]
         [Trait("ContatoServices", "Deve retornar que conseguiu atualizar contato com sucesso")]
         public async void ContatoServices_AtualizarContato_DeveConseguirAtualizarContatoComSucesso()
         {
