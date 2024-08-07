@@ -20,6 +20,7 @@ namespace TechChallenge.Testes.Domain.ValueObjects
         [Theory]
         [InlineData(Estado.SP, 31)]
         [InlineData(Estado.RJ, 11)]
+        [Trait("Regiao", "Deve dar erro por região com DDD inválido")]
         public void Regiao_InstanciaRegiao_DeveDarErroPorRegiaoComDDDInvalido(Estado estado, int ddd)
         {
             // Arrange, Act & Assert

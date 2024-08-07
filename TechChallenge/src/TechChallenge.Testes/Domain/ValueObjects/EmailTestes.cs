@@ -24,6 +24,7 @@ namespace TechChallenge.Testes.Domain.ValueObjects
         [InlineData("email")]
         [InlineData("emailcontato.com.br")]
         [InlineData("email@contato")]
+        [Trait("Email", "Deve enviar erro de que o email esta invalido")]
         public void Email_Construtor_DeveEstourarExcecaoDeEmailInvalido(string enderecoDeEmail)
         {
             // Arrange, Act & Assert
