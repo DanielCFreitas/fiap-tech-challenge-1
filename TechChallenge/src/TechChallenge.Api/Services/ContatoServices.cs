@@ -13,6 +13,11 @@ namespace TechChallenge.Api.Services
     {
         private readonly IContatoRepository _contatoRepository;
 
+        public ContatoServices(IContatoRepository contatoRepository)
+        {
+            _contatoRepository = contatoRepository;
+        }
+
         public async Task<ValidationResult> AtualizarContato(Guid contatoId, AtualizarContatoRequest request)
         {
             if (!request.RequisicaoEstaValida())
@@ -37,11 +42,6 @@ namespace TechChallenge.Api.Services
                 return new ValidationResult(new List<ValidationFailure>() { new ValidationFailure("Banco de Dados", "Não conseguiu persistir o contato no banco de dados") });
 
             return request.ValidationResult!;
-        }
-
-        public ContatoServices(IContatoRepository contatoRepository)
-        {
-            _contatoRepository = contatoRepository;
         }
 
         public async Task<ValidationResult> CadastrarContato(CadastrarContatoRequest request)
