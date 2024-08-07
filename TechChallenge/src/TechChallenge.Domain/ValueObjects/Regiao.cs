@@ -10,6 +10,8 @@ namespace TechChallenge.Domain.ValueObjects
         {
             Estado = estado;
             DDD = ddd;
+
+            Validar();
         }
 
         protected Regiao() { }
