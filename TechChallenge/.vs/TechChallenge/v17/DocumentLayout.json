@@ -9,6 +9,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{36CD0087-2E16-4B45-AFCB-9A81D952D82B}|src\\TechChallenge.Api\\TechChallenge.Api.csproj|c:\\users\\danie\\desktop\\fiap-tech-challenge-1\\techchallenge\\src\\techchallenge.api\\services\\contatoservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{36CD0087-2E16-4B45-AFCB-9A81D952D82B}|src\\TechChallenge.Api\\TechChallenge.Api.csproj|solutionrelative:src\\techchallenge.api\\services\\contatoservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E9DD047-D2EB-4652-B3B6-EAA6A14A6D50}|src\\TechChallenge.Testes\\TechChallenge.Testes.csproj|c:\\users\\danie\\desktop\\fiap-tech-challenge-1\\techchallenge\\src\\techchallenge.testes\\api\\services\\fixtures\\contatoservicestestesfixture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E9DD047-D2EB-4652-B3B6-EAA6A14A6D50}|src\\TechChallenge.Testes\\TechChallenge.Testes.csproj|solutionrelative:src\\techchallenge.testes\\api\\services\\fixtures\\contatoservicestestesfixture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,11 +22,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ContatoServicesTestesFixture.cs",
+              "DocumentMoniker": "C:\\Users\\danie\\Desktop\\fiap-tech-challenge-1\\TechChallenge\\src\\TechChallenge.Testes\\Api\\Services\\Fixtures\\ContatoServicesTestesFixture.cs",
+              "RelativeDocumentMoniker": "src\\TechChallenge.Testes\\Api\\Services\\Fixtures\\ContatoServicesTestesFixture.cs",
+              "ToolTip": "C:\\Users\\danie\\Desktop\\fiap-tech-challenge-1\\TechChallenge\\src\\TechChallenge.Testes\\Api\\Services\\Fixtures\\ContatoServicesTestesFixture.cs",
+              "RelativeToolTip": "src\\TechChallenge.Testes\\Api\\Services\\Fixtures\\ContatoServicesTestesFixture.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T12:20:44.264Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -32,7 +49,7 @@
               "RelativeDocumentMoniker": "src\\TechChallenge.Testes\\Api\\Services\\ContatoServicesTestes.cs",
               "ToolTip": "C:\\Users\\danie\\Desktop\\fiap-tech-challenge-1\\TechChallenge\\src\\TechChallenge.Testes\\Api\\Services\\ContatoServicesTestes.cs",
               "RelativeToolTip": "src\\TechChallenge.Testes\\Api\\Services\\ContatoServicesTestes.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAACQAAAAAAAAA",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAgwFwAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-07T11:55:22.225Z",
               "EditorCaption": ""
@@ -45,7 +62,7 @@
               "RelativeDocumentMoniker": "src\\TechChallenge.Api\\Services\\ContatoServices.cs",
               "ToolTip": "C:\\Users\\danie\\Desktop\\fiap-tech-challenge-1\\TechChallenge\\src\\TechChallenge.Api\\Services\\ContatoServices.cs",
               "RelativeToolTip": "src\\TechChallenge.Api\\Services\\ContatoServices.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAABCAAAA",
+              "ViewState": "AQIAABoAAAAAAAAAAAAuwC0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-07T11:49:04.24Z",
               "EditorCaption": ""
