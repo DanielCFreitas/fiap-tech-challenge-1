@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\danie\\Desktop\\fiap-tech-challenge-1\\TechChallenge\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4E9DD047-D2EB-4652-B3B6-EAA6A14A6D50}|src\\TechChallenge.Testes\\TechChallenge.Testes.csproj|c:\\users\\danie\\desktop\\fiap-tech-challenge-1\\techchallenge\\src\\techchallenge.testes\\domain\\valueobjects\\telefonetestes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E9DD047-D2EB-4652-B3B6-EAA6A14A6D50}|src\\TechChallenge.Testes\\TechChallenge.Testes.csproj|solutionrelative:src\\techchallenge.testes\\domain\\valueobjects\\telefonetestes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4E9DD047-D2EB-4652-B3B6-EAA6A14A6D50}|src\\TechChallenge.Testes\\TechChallenge.Testes.csproj|c:\\users\\danie\\desktop\\fiap-tech-challenge-1\\techchallenge\\src\\techchallenge.testes\\api\\services\\contatoservicestestes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E9DD047-D2EB-4652-B3B6-EAA6A14A6D50}|src\\TechChallenge.Testes\\TechChallenge.Testes.csproj|solutionrelative:src\\techchallenge.testes\\api\\services\\contatoservicestestes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{312B21B4-D26A-4CC7-8A62-DCF9A3ADFBDE}|src\\TechChallenge.Domain\\TechChallenge.Domain.csproj|c:\\users\\danie\\desktop\\fiap-tech-challenge-1\\techchallenge\\src\\techchallenge.domain\\valueobjects\\telefone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{312B21B4-D26A-4CC7-8A62-DCF9A3ADFBDE}|src\\TechChallenge.Domain\\TechChallenge.Domain.csproj|solutionrelative:src\\techchallenge.domain\\valueobjects\\telefone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{36CD0087-2E16-4B45-AFCB-9A81D952D82B}|src\\TechChallenge.Api\\TechChallenge.Api.csproj|c:\\users\\danie\\desktop\\fiap-tech-challenge-1\\techchallenge\\src\\techchallenge.api\\services\\contatoservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36CD0087-2E16-4B45-AFCB-9A81D952D82B}|src\\TechChallenge.Api\\TechChallenge.Api.csproj|solutionrelative:src\\techchallenge.api\\services\\contatoservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,28 +26,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Telefone.cs",
-              "DocumentMoniker": "C:\\Users\\danie\\Desktop\\fiap-tech-challenge-1\\TechChallenge\\src\\TechChallenge.Domain\\ValueObjects\\Telefone.cs",
-              "RelativeDocumentMoniker": "src\\TechChallenge.Domain\\ValueObjects\\Telefone.cs",
-              "ToolTip": "C:\\Users\\danie\\Desktop\\fiap-tech-challenge-1\\TechChallenge\\src\\TechChallenge.Domain\\ValueObjects\\Telefone.cs",
-              "RelativeToolTip": "src\\TechChallenge.Domain\\ValueObjects\\Telefone.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAsAAAAcAAAA",
+              "DocumentIndex": 0,
+              "Title": "ContatoServicesTestes.cs",
+              "DocumentMoniker": "C:\\Users\\danie\\Desktop\\fiap-tech-challenge-1\\TechChallenge\\src\\TechChallenge.Testes\\Api\\Services\\ContatoServicesTestes.cs",
+              "RelativeDocumentMoniker": "src\\TechChallenge.Testes\\Api\\Services\\ContatoServicesTestes.cs",
+              "ToolTip": "C:\\Users\\danie\\Desktop\\fiap-tech-challenge-1\\TechChallenge\\src\\TechChallenge.Testes\\Api\\Services\\ContatoServicesTestes.cs",
+              "RelativeToolTip": "src\\TechChallenge.Testes\\Api\\Services\\ContatoServicesTestes.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-07T11:46:01.175Z",
+              "WhenOpened": "2024-08-07T11:55:22.225Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TelefoneTestes.cs",
-              "DocumentMoniker": "C:\\Users\\danie\\Desktop\\fiap-tech-challenge-1\\TechChallenge\\src\\TechChallenge.Testes\\Domain\\ValueObjects\\TelefoneTestes.cs",
-              "RelativeDocumentMoniker": "src\\TechChallenge.Testes\\Domain\\ValueObjects\\TelefoneTestes.cs",
-              "ToolTip": "C:\\Users\\danie\\Desktop\\fiap-tech-challenge-1\\TechChallenge\\src\\TechChallenge.Testes\\Domain\\ValueObjects\\TelefoneTestes.cs",
-              "RelativeToolTip": "src\\TechChallenge.Testes\\Domain\\ValueObjects\\TelefoneTestes.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAAABkAAAAkAAAA",
+              "DocumentIndex": 1,
+              "Title": "ContatoServices.cs",
+              "DocumentMoniker": "C:\\Users\\danie\\Desktop\\fiap-tech-challenge-1\\TechChallenge\\src\\TechChallenge.Api\\Services\\ContatoServices.cs",
+              "RelativeDocumentMoniker": "src\\TechChallenge.Api\\Services\\ContatoServices.cs",
+              "ToolTip": "C:\\Users\\danie\\Desktop\\fiap-tech-challenge-1\\TechChallenge\\src\\TechChallenge.Api\\Services\\ContatoServices.cs",
+              "RelativeToolTip": "src\\TechChallenge.Api\\Services\\ContatoServices.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAABCAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-07T11:42:34.335Z",
+              "WhenOpened": "2024-08-07T11:49:04.24Z",
               "EditorCaption": ""
             }
           ]
