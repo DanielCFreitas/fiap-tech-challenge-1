@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\danie\\Desktop\\fiap-tech-challenge-1\\TechChallenge\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4E9DD047-D2EB-4652-B3B6-EAA6A14A6D50}|src\\TechChallenge.Testes\\TechChallenge.Testes.csproj|c:\\users\\danie\\desktop\\fiap-tech-challenge-1\\techchallenge\\src\\techchallenge.testes\\domain\\enum\\estadoteste.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E9DD047-D2EB-4652-B3B6-EAA6A14A6D50}|src\\TechChallenge.Testes\\TechChallenge.Testes.csproj|solutionrelative:src\\techchallenge.testes\\domain\\enum\\estadoteste.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4E9DD047-D2EB-4652-B3B6-EAA6A14A6D50}|src\\TechChallenge.Testes\\TechChallenge.Testes.csproj|c:\\users\\danie\\desktop\\fiap-tech-challenge-1\\techchallenge\\src\\techchallenge.testes\\domain\\valueobjects\\emailtestes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E9DD047-D2EB-4652-B3B6-EAA6A14A6D50}|src\\TechChallenge.Testes\\TechChallenge.Testes.csproj|solutionrelative:src\\techchallenge.testes\\domain\\valueobjects\\emailtestes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{312B21B4-D26A-4CC7-8A62-DCF9A3ADFBDE}|src\\TechChallenge.Domain\\TechChallenge.Domain.csproj|c:\\users\\danie\\desktop\\fiap-tech-challenge-1\\techchallenge\\src\\techchallenge.domain\\valueobjects\\email.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{312B21B4-D26A-4CC7-8A62-DCF9A3ADFBDE}|src\\TechChallenge.Domain\\TechChallenge.Domain.csproj|solutionrelative:src\\techchallenge.domain\\valueobjects\\email.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E9DD047-D2EB-4652-B3B6-EAA6A14A6D50}|src\\TechChallenge.Testes\\TechChallenge.Testes.csproj|c:\\users\\danie\\desktop\\fiap-tech-challenge-1\\techchallenge\\src\\techchallenge.testes\\domain\\entities\\contatotestes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E9DD047-D2EB-4652-B3B6-EAA6A14A6D50}|src\\TechChallenge.Testes\\TechChallenge.Testes.csproj|solutionrelative:src\\techchallenge.testes\\domain\\entities\\contatotestes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{312B21B4-D26A-4CC7-8A62-DCF9A3ADFBDE}|src\\TechChallenge.Domain\\TechChallenge.Domain.csproj|c:\\users\\danie\\desktop\\fiap-tech-challenge-1\\techchallenge\\src\\techchallenge.domain\\enum\\estado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -18,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,15 +34,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "EstadoTeste.cs",
-              "DocumentMoniker": "C:\\Users\\danie\\Desktop\\fiap-tech-challenge-1\\TechChallenge\\src\\TechChallenge.Testes\\Domain\\Enum\\EstadoTeste.cs",
-              "RelativeDocumentMoniker": "src\\TechChallenge.Testes\\Domain\\Enum\\EstadoTeste.cs",
-              "ToolTip": "C:\\Users\\danie\\Desktop\\fiap-tech-challenge-1\\TechChallenge\\src\\TechChallenge.Testes\\Domain\\Enum\\EstadoTeste.cs",
-              "RelativeToolTip": "src\\TechChallenge.Testes\\Domain\\Enum\\EstadoTeste.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAQwBsAAAAWAAAA",
+              "DocumentIndex": 2,
+              "Title": "ContatoTestes.cs",
+              "DocumentMoniker": "C:\\Users\\danie\\Desktop\\fiap-tech-challenge-1\\TechChallenge\\src\\TechChallenge.Testes\\Domain\\Entities\\ContatoTestes.cs",
+              "RelativeDocumentMoniker": "src\\TechChallenge.Testes\\Domain\\Entities\\ContatoTestes.cs",
+              "ToolTip": "C:\\Users\\danie\\Desktop\\fiap-tech-challenge-1\\TechChallenge\\src\\TechChallenge.Testes\\Domain\\Entities\\ContatoTestes.cs",
+              "RelativeToolTip": "src\\TechChallenge.Testes\\Domain\\Entities\\ContatoTestes.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T20:33:14.51Z",
+              "WhenOpened": "2024-08-06T21:04:45.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EmailTestes.cs",
+              "DocumentMoniker": "C:\\Users\\danie\\Desktop\\fiap-tech-challenge-1\\TechChallenge\\src\\TechChallenge.Testes\\Domain\\ValueObjects\\EmailTestes.cs",
+              "RelativeDocumentMoniker": "src\\TechChallenge.Testes\\Domain\\ValueObjects\\EmailTestes.cs",
+              "ToolTip": "C:\\Users\\danie\\Desktop\\fiap-tech-challenge-1\\TechChallenge\\src\\TechChallenge.Testes\\Domain\\ValueObjects\\EmailTestes.cs",
+              "RelativeToolTip": "src\\TechChallenge.Testes\\Domain\\ValueObjects\\EmailTestes.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwB0AAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T21:03:55.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Email.cs",
+              "DocumentMoniker": "C:\\Users\\danie\\Desktop\\fiap-tech-challenge-1\\TechChallenge\\src\\TechChallenge.Domain\\ValueObjects\\Email.cs",
+              "RelativeDocumentMoniker": "src\\TechChallenge.Domain\\ValueObjects\\Email.cs",
+              "ToolTip": "C:\\Users\\danie\\Desktop\\fiap-tech-challenge-1\\TechChallenge\\src\\TechChallenge.Domain\\ValueObjects\\Email.cs",
+              "RelativeToolTip": "src\\TechChallenge.Domain\\ValueObjects\\Email.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T21:02:53.715Z",
               "EditorCaption": ""
             }
           ]
@@ -60,7 +94,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Estado.cs",
               "DocumentMoniker": "C:\\Users\\danie\\Desktop\\fiap-tech-challenge-1\\TechChallenge\\src\\TechChallenge.Domain\\Enum\\Estado.cs",
               "RelativeDocumentMoniker": "src\\TechChallenge.Domain\\Enum\\Estado.cs",
